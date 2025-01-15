@@ -1,48 +1,62 @@
 body {
     background-color: #f8f9fa;
-    font-family: 'Times New Roman', Times, serifsans-serif;
-    
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
 }
-.container {
-    max-width: 1000 px;
- 
 
+.navbar {
+    background-color: #28a745; 
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #d4edda !important;
+}
+
+.container {
+    max-width: 1000px;
 }
 
 .container img {
-   width: 150px;
-   height: inherit;
-   margin-top: 20px;
-   margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%; 
+    transition: transform 0.3s ease;
 }
+
+.container img:hover {
+    transform: scale(1.1); 
+}
+
 .profile-header {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .profile-header h1 {
     margin-bottom: 10px;
 }
+
 .profile-header h2 {
     color: #6c757d;
 }
+
 .section-title {
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.contact-info, .education, .experience {
-    margin-bottom: 30px;
-}
-.contact-info li, .education li, .experience li {
-    margin-bottom: 10px;
-}
-.contact-info li i, .experience li i {
-    color: #007bff;
-    margin-right: 10px;
-}
+
+
 .education li, .experience li {
     padding-left: 30px;
     position: relative;
 }
+
 .education li:before, .experience li:before {
     content: '';
     position: absolute;
@@ -53,3 +67,29 @@ body {
     background-color: #007bff;
     border-radius: 50%;
 }
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in-visible {
+    opacity: 1;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin-right: 10px;
+}
+
