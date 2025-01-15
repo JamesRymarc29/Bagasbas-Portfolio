@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .navbar {
@@ -31,3 +32,4 @@ body, html {
 footer {
     margin-top: auto; 
 }
+
